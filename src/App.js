@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import RightBar from "./components/RightBar/RightBar";
 import WorkSpace from "./components/WorkSpace/Workspace";
-import "./App.css";
 
 function App() {
   return (
