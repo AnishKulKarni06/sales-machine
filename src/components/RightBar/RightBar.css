@@ -1,0 +1,89 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 900px) {
+  .bloc-tabs1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    word-break: break-all;
+  }
+}
+.bloc-tabs1 {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs1 {
+  padding: 10px;
+  margin: 0.3em;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+
+.active-tabs1 {
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+button {
+  border: none;
+}
+.content-tabs1 {
+  flex-grow: 1;
+}
+.content1 {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content1 h2 {
+  padding: 0px 0 5px 0px;
+}
+.content1 hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.active-content1 {
+  display: block;
+}
+
+.RightBar {
+  height: 100vh;
+  border-left: 0.5px solid #d3d3d3;
+  color: #222;
+}
